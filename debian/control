@@ -2,11 +2,11 @@ Source: eximview
 Section: python
 Priority: extra
 Maintainer: Ben <stuff@birving.com>
-Build-Depends: debhelper (>= 9), python, dh-virtualenv (>= 0.8), python-all-dev
+Build-Depends: debhelper (>= 9), python, dh-virtualenv, python-all-dev
 Standards-Version: 3.9.5
 
 Package: eximview
 Architecture: any
 Pre-Depends: dpkg (>= 1.16.1), python2.7-minimal, ${misc:Pre-Depends}
-Depends: ${python:Depends}, ${misc:Depends}, python-pyside, python-numpy
+Depends: ${python:Depends}, ${misc:Depends}, python-pyside
 Description: Example image viewer

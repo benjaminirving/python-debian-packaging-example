@@ -1,6 +1,6 @@
 # install bash script to usr/bin
 # usr/local/bin seems to only be for self compiled stuff
-debian/eximview usr/bin
+debian/eximview2 usr/bin
 # Copy application file and icon
 debian/ExImview.desktop usr/share/applications
 debian/home_made_icon.png usr/share/icons/hicolor/48x48/apps

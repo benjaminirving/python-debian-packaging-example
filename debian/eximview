@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/share/python/eximview/bin/python /usr/share/python/eximview/bin/pkviewer2/image_app.py

@@ -8,7 +8,6 @@ ExImview
 
 # setup parameters
 setup(name='PKView',
-      cmdclass={'build_ext': build_ext},
       version='0.1',
       description='Example viewer',
       long_description=Description,
