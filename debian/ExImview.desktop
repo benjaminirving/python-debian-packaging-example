@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.1
+Name=eximview
+GenericName=Example viewer
+Comment=Illustration of dh-virtualenv debian packaging
+Type=Application
+Categories=Education;Science;ImageProcessing;
+Exec=eximview2
+Terminal=false
+StartupNotify=true
+Icon=home_made_icon.png
+Name[en_GB]=ExImview
