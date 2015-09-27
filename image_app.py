@@ -5,6 +5,7 @@ from PySide import QtGui, QtCore
 import sys
 import platform
 
+# Use NSURL as a workaround to pyside/Qt4 behaviour for dragging and dropping on OSx
 op_sys = platform.system()
 if op_sys == 'Darwin':
     from Foundation import NSURL
@@ -29,14 +30,27 @@ class MainWindowWidget(QtGui.QWidget):
         layout.addWidget(self.lbl)
 
         self.setLayout(layout)
+
+        # Enable dragging and dropping onto the GUI
         self.setAcceptDrops(True)
+
         self.show()
 
     def load_image_but(self):
+        """
+        Open a File dialog when the button is pressed
+
+        :return:
+        """
         self.fname, _ = QtGui.QFileDialog.getOpenFileName(self, 'Open file')
         self.load_image()
 
     def load_image(self):
+        """
+        Set the image to the pixmap
+
+        :return:
+        """
         pixmap = QtGui.QPixmap(self.fname)
         pixmap = pixmap.scaled(500, 500, QtCore.Qt.KeepAspectRatio)
         self.lbl.setPixmap(pixmap)
@@ -64,6 +78,7 @@ class MainWindowWidget(QtGui.QWidget):
         if e.mimeData().hasUrls:
             e.setDropAction(QtCore.Qt.CopyAction)
             e.accept()
+            # Workaround for OSx dragging and dropping
             for url in e.mimeData().urls():
                 if op_sys == 'Darwin':
                     fname = str(NSURL.URLWithString_(str(url.toString())).filePathURL().path())
