@@ -8,5 +8,5 @@ Standards-Version: 3.9.5
 Package: eximview
 Architecture: any
 Pre-Depends: dpkg (>= 1.16.1), python2.7-minimal, ${misc:Pre-Depends}
-Depends: ${python:Depends}, ${misc:Depends}, python-pyside
+Depends: ${python:Depends}, ${misc:Depends}, python-pyside, python-numpy
 Description: Example image viewer
