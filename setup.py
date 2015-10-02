@@ -7,11 +7,12 @@ ExImview
 """
 
 # setup parameters
-setup(name='PKView',
-      version='0.11',
+setup(name='ExImView',
+      version='0.12',
       description='Example viewer',
       long_description=Description,
       author='Benjamin',
+      packages=['ExImView'],
       author_email='stuff@birving.com',
       classifiers=["Programming Language :: Python :: 2.7",
                    "Development Status:: 3 - Alpha",
@@ -25,5 +26,5 @@ setup(name='PKView',
                    "Topic :: Scientific/Engineering :: Bio-Informatics",
                    ],
       entry_points={
-          'console_scripts': ['test_image_app = image_app.image_app:main']}
+          'gui_scripts': ['test_image_app = ExImView.image_app:main']}
       )
