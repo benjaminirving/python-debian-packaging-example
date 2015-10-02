@@ -8,7 +8,7 @@ ExImview
 
 # setup parameters
 setup(name='PKView',
-      version='0.1',
+      version='0.11',
       description='Example viewer',
       long_description=Description,
       author='Benjamin',
@@ -24,4 +24,6 @@ setup(name='PKView',
                    "Intended Audience :: End Users/Desktop",
                    "Topic :: Scientific/Engineering :: Bio-Informatics",
                    ],
-      scripts=["image_app.py"])
+      entry_points={
+          'console_scripts': ['test_image_app = image_app.image_app:main']}
+      )
