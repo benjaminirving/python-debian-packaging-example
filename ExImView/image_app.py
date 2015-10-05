@@ -117,10 +117,14 @@ class MainWindowWidget(QtGui.QWidget):
         else:
             e.ignore()
 
-# Run if called directly
-if __name__ == '__main__':
+def main():
     # Initialise the application
     app = QtGui.QApplication(sys.argv)
     # Call the widget
     ex = MainWindowWidget()
     sys.exit(app.exec_())
+
+
+# Run if called directly
+if __name__ == '__main__':
+    main()

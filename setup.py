@@ -8,7 +8,7 @@ ExImview
 
 # setup parameters
 setup(name='ExImView',
-      version='0.12',
+      version='0.14',
       description='Example viewer',
       long_description=Description,
       author='Benjamin',

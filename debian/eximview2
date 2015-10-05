@@ -1,4 +1,4 @@
 #!/bin/sh
 
 #/usr/share/python/eximview/bin/python /usr/share/python/eximview/bin/image_app.py
-/usr/share/python/eximview/bin/python/local/bin/test_image_app
+/usr/share/python/eximview/bin/test_image_app
