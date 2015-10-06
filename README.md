@@ -32,7 +32,7 @@ source ~/virt-example/bin/activate
 [dh-virtualenv instructions](http://dh-virtualenv.readthedocs.org/en/0.9/tutorial.html#step-1-install-dh-virtualenv)
 
 
-Create an example debian package of the GUI
+Build the example debian package of the GUI
 -------------------------------------------
 In the folder containing the source
 
@@ -42,7 +42,7 @@ dpkg-buildpackage -us -uc -b
 
 This should build a debian outside the folder
 
-For a full discussion on the setup and files, see the corresponding [blog post](http://blog.birving.com).
+For a full discussion on the setup and files, see the corresponding [blog post](http://blog.birving.com) (to be written soon).
 
 
 Screenshots
@@ -63,3 +63,5 @@ The app functions as expected
 
 Notes
 ------
+
+Note that this example doesn't take advantage of the main use of dh-virtualenv, which is packaging the latest dependencies with the app. But this can be done trivially by adding them to the requirements.txt file as explained in the dh-virtualenv documentation. 
