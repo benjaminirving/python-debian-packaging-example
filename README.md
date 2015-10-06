@@ -18,16 +18,16 @@ Setup for ubuntu 14.04
 -----------------------
 - Install the python development packages
 
-`bash
+```bash
 sudo apt-get install python-dev
-`
+```
 
 - Create a [virtualenv](https://virtualenv.pypa.io/en/latest/) (so that the latest pip and setuptools  and activate
 
-`bash
+```bash
 virtualenv virt-example
 source ~/virt-example/bin/activate
-`
+```
 
 - Install the latest dh-virtualenv from source as discussed in step 1 of the 
 [dh-virtualenv instructions](http://dh-virtualenv.readthedocs.org/en/0.9/tutorial.html#step-1-install-dh-virtualenv)
@@ -37,9 +37,9 @@ Build the example debian package of the GUI
 -------------------------------------------
 In the folder containing the source
 
-`bash
+```bash
 dpkg-buildpackage -us -uc -b
-`
+```
 
 This should build a debian outside the folder
 
@@ -67,9 +67,9 @@ The app functions as expected
 
 To uninstall the test app
 
-`bash
+```bash
 sudo apt-get remove ExImView
-`
+```
 
 Notes
 ------
