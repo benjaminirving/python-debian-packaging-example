@@ -8,7 +8,7 @@ Overview
 
 - <a href="http://dh-virtualenv.readthedocs.org/en/0.9/" target="_blank">dh-virtualenv</a> is a very neat way of packaging python into debs with the key advantage that these apps are packaged as
 a virtualenv so that the latest packages can be use without relying on the packages on the system... 
-But these packages can also be used.
+But system packages can also be used. A key advantage is that the latest python libraries can be used in a self contained way. 
 - The dh-virtualenv documentation mainly focuses on terminal scripts and I couldn't find a good example of packaging an app. 
 - So I've included one here that adds a terminal command as well as a desktop shortcut and icon. 
 - The example I've used is from a <a href="http://blog.birving.com/2015/09/drag-and-drop-files-into-gui-using.html" target="_blank">previous blog post</a> 
@@ -23,6 +23,7 @@ sudo apt-get install python-dev
 `
 
 - Create a [virtualenv](https://virtualenv.pypa.io/en/latest/) (so that the latest pip and setuptools  and activate
+
 `bash
 virtualenv virt-example
 source ~/virt-example/bin/activate
