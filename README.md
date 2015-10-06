@@ -6,12 +6,12 @@ Example of packaging a python app as a .deb using dh-virtualenv
 Overview
 --------
 
-- [dh-virtualenv](http://dh-virtualenv.readthedocs.org/en/0.9/) is a very neat way of packaging python into debs with the key advantage that these apps are packaged as
+- <a href="http://dh-virtualenv.readthedocs.org/en/0.9/" target="_blank">dh-virtualenv</a> is a very neat way of packaging python into debs with the key advantage that these apps are packaged as
 a virtualenv so that the latest packages can be use without relying on the packages on the system... 
 But these packages can also be used.
 - The dh-virtualenv documentation mainly focuses on terminal scripts and I couldn't find a good example of packaging an app. 
 - So I've included one here that adds a terminal command as well as a desktop shortcut and icon. 
-- The example I've used is from a [previous blog post](http://blog.birving.com/2015/09/drag-and-drop-files-into-gui-using.html) 
+- The example I've used is from a <a href="http://blog.birving.com/2015/09/drag-and-drop-files-into-gui-using.html" target="_blank">previous blog post</a> 
 on pyside dragging and dropping
 
 Setup for ubuntu 14.04
@@ -47,6 +47,18 @@ For a full discussion on the setup and files, see the corresponding [blog post](
 
 Screenshots
 -----------
+
+The icon appears in search
+
+![Image 1](./screenshots/1.png)
+
+Once launched an icon appears in the dock
+
+![Image 2](./screenshots/2.png)
+
+The app functions as expected
+
+![Image 3](./screenshots/3.png)
 
 
 Notes
