@@ -48,6 +48,10 @@ For a full discussion on the setup and files, see the corresponding [blog post](
 Screenshots
 -----------
 
+Install the newly created debian
+
+![Image 0](./screenshots/4.png)
+
 The icon appears in search
 
 ![Image 1](./screenshots/1.png)
@@ -60,8 +64,15 @@ The app functions as expected
 
 ![Image 3](./screenshots/3.png)
 
+To uninstall the test app
+
+`bash
+sudo apt-get remove ExImView
+`
 
 Notes
 ------
 
 Note that this example doesn't take advantage of the main use of dh-virtualenv, which is packaging the latest dependencies with the app. But this can be done trivially by adding them to the requirements.txt file as explained in the dh-virtualenv documentation. 
+
+Please suggest changes that improve this example
