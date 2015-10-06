@@ -23,6 +23,7 @@ sudo apt-get install python-dev
 `
 
 - Create a [virtualenv](https://virtualenv.pypa.io/en/latest/) (so that the latest pip and setuptools  and activate
+
 `bash
 virtualenv virt-example
 source ~/virt-example/bin/activate
