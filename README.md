@@ -51,7 +51,7 @@ dpkg-buildpackage -us -uc -b
 
 This should build a debian outside the folder
 
-For a full discussion on the setup and files, see the corresponding [blog post](http://blog.birving.com) (to be written soon).
+For a full discussion on the setup and files, see the corresponding [blog post](http://blog.birving.com/2015/10/creating-debian-application-from-python.html).
 
 
 Screenshots
