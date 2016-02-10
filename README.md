@@ -27,11 +27,19 @@ sudo apt-get install python-dev
 ```bash
 virtualenv virt-example
 source ~/virt-example/bin/activate
+pip install -U pip
+pip install -U setuptools
 ```
 
 - Install the latest dh-virtualenv from source as discussed in step 1 of the 
 [dh-virtualenv instructions](http://dh-virtualenv.readthedocs.org/en/0.9/tutorial.html#step-1-install-dh-virtualenv)
 
+- Install pyside in your virtualenv (Requires Qt4)
+
+- Test that the script works before packaging it as a deb
+```bash
+python ExImView/image_app.py
+```
 
 Build the example debian package of the GUI
 -------------------------------------------
